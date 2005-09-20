@@ -1,0 +1,54 @@
+NAME
+    Lingua::EN::FindNumber - Locate (written) numbers in English text
+
+SYNOPSIS
+      use Lingua::EN::FindNumber;
+      my $text = "Fourscore and seven years ago, our four fathers...";
+
+      numify($text); # "87 years ago, our 4 fathers..."
+
+      @numbers = extract_numbers($text); # "Fourscore and seven", "four"
+
+      while ($text =~ /$number_re/g) { # Build your own iterator
+  
+DESCRIPTION
+    This module provides a regular expression for finding numbers in English
+    text. It also provides functions for extracting and manipulating such
+    numbers.
+
+EXPORTED METHODS
+  extract_numbers / numify / $number_re
+      numify($text); # "87 years ago, our 4 fathers..."
+
+      @numbers = extract_numbers($text); # "Fourscore and seven", "four"
+
+      while ($text =~ /$number_re/g) { # Build your own iterator
+  
+SEE ALSO
+    This module was written for the Natural Languages chapter of the second
+    edition of Advanced Perl Programming. If you liked the module, why not
+    buy the book?
+
+      http://www.amazon.co.uk/exec/obidos/ASIN/0596004567/tmtm-20
+
+    This module works rather well in conjunction with
+    Lingua::EN::Words2Nums, which is a very cool module anyway. (And I stole
+    some of this module's code from it. Thanks, Joey!) It may also be
+    involved with Lingua::EN::NamedEntity in the future, so check that one
+    out too.
+
+AUTHOR
+    Current maintainer: Tony Bowden
+
+    Original author: Simon Cozens
+
+BUGS and QUERIES
+    Please direct all correspondence regarding this module to:
+    bug-Lingua-EN-Number@rt.cpan.org
+
+COPYRIGHT AND LICENSE
+    Copyright 2003-2005 by Simon Cozens
+
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+

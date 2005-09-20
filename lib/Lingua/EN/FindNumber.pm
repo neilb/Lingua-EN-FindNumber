@@ -1,7 +1,7 @@
 package Lingua::EN::FindNumber;
 
 use 5.006;
-our $VERSION = '1.1';
+our $VERSION = '1.2';
 
 use strict;
 use warnings;
@@ -59,16 +59,24 @@ This module provides a regular expression for finding numbers in English
 text. It also provides functions for extracting and manipulating such
 numbers.
 
-=head2 EXPORT
+=head1 EXPORTED METHODS
 
-By default, the C<$number_re> regular expression and the C<numify> and
-C<extract_numbers> subroutines.
+=head2 extract_numbers / numify / $number_re
+
+  numify($text); # "87 years ago, our 4 fathers..."
+
+  @numbers = extract_numbers($text); # "Fourscore and seven", "four"
+
+  while ($text =~ /$number_re/g) { # Build your own iterator
+  
 
 =head1 SEE ALSO
 
-This module was written for the Natural Languages chapter of the 
-second edition of Advanced Perl Programming. If you liked the module,
-why not buy the book?
+This module was written for the Natural Languages chapter of the second
+edition of Advanced Perl Programming. If you liked the module, why not
+buy the book?
+
+  http://www.amazon.co.uk/exec/obidos/ASIN/0596004567/tmtm-20
 
 This module works rather well in conjunction with
 L<Lingua::EN::Words2Nums>, which is a very cool module anyway. (And I
@@ -78,9 +86,9 @@ one out too.
 
 =head1 AUTHOR
 
-Original author: Simon Cozens
-
 Current maintainer: Tony Bowden
+
+Original author: Simon Cozens
 
 =head1 BUGS and QUERIES
 
@@ -89,7 +97,7 @@ Please direct all correspondence regarding this module to:
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2003 by Simon Cozens
+Copyright 2003-2005 by Simon Cozens
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 
