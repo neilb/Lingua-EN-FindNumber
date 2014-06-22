@@ -82,6 +82,10 @@ stole some of this module's code from it. Thanks, Joey!) It may also
 be involved with L<Lingua::EN::NamedEntity> in the future, so check that
 one out too.
 
+=head1 REPOSITORY
+
+L<https://github.com/neilbowers/Lingua-EN-FindNumber>
+
 =head1 AUTHOR
 
 Current maintainer: Tony Bowden
