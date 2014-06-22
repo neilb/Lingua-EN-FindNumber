@@ -1,8 +1,6 @@
 package Lingua::EN::FindNumber;
 
 use 5.006;
-our $VERSION = '1.2';
-
 use strict;
 use warnings;
 

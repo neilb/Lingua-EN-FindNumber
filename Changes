@@ -1,6 +1,7 @@
 Revision history for Perl module Lingua::EN::FindNumber
 
 1.30 2014-06-22 NEILB
+    - Switched to Dist::Zilla
     - Reformatted this file as per CPAN::Changes::Spec
 
 1.2 2005-09-20 TMTM
