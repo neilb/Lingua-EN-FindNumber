@@ -1,12 +1,14 @@
-Revision history for Perl extension Lingua::EN::FindNumber.
+Revision history for Perl module Lingua::EN::FindNumber
 
-1.2  Tue Sep 20 22:35:07 UTC 2005
-	- Add link to Advanced Perl Programming now that it's published
+1.30 2014-06-22 NEILB
+    - Reformatted this file as per CPAN::Changes::Spec
 
-1.1  Sun Oct 24 13:44:30 UTC 2004
-	- Tony Bowden is now maintainer
+1.2 2005-09-20 TMTM
+    - Add link to Advanced Perl Programming now that it's published
 
-1.00  Sun Dec  7 16:01:06 2003
-	- original version; created by h2xs 1.22 with options
-		-b 5.6.0 -AX -n Lingua::EN::FindNumber
+1.1 2004-10-24 TMTM
+    - Tony Bowden is now maintainer
+
+1.0 2003-12-07 SIMON
+    - First release to CPAN
 
