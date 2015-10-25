@@ -1,5 +1,8 @@
 Revision history for Perl module Lingua::EN::FindNumber
 
+1.32 2015-10-25 NEILB
+    - Changed github repo URL after changing my github username
+
 1.31 2015-07-04 NEILB
     - Added [MetaJSON] to dist.ini, so release will include META.json.
       RT#105631 from ETHER++

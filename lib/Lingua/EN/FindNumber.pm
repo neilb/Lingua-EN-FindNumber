@@ -84,7 +84,7 @@ one out too.
 
 =head1 REPOSITORY
 
-L<https://github.com/neilbowers/Lingua-EN-FindNumber>
+L<https://github.com/neilb/Lingua-EN-FindNumber>
 
 =head1 AUTHOR
 
