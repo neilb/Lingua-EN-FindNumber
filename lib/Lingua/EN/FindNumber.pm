@@ -9,6 +9,9 @@ our @EXPORT = qw( extract_numbers $number_re numify );
 
 use Lingua::EN::Words2Nums;
 
+# This is decoded from Lingua::EN::Numbers::Ordinate
+my $mixed = qr/ \d* (?: \d+th | (?<!1) (?: 1st | 2nd | 3rd ) ) /ix;
+
 # This is from Lingua::EN::Words2Nums, after being thrown through
 # Regex::PreSuf
 my $numbers =
@@ -16,7 +19,10 @@ my $numbers =
 
 my $ok_words  = qr/\b(and|a|of)\b/;
 my $ok_things = qr/[^A-Za-z0-9.]/;
-our $number_re = qr/\b(($numbers($ok_words|$ok_things)*)+)\b/i;
+our $number_re = qr/\b(
+	( $numbers($ok_words|$ok_things)* )+
+	| $mixed
+)\b/ix;
 
 sub extract_numbers {
 	my $text = shift;
